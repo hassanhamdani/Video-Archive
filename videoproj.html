@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<link rel="stylesheet" type="text/css" href="video.css">
+<script src="vid.js"></script>
+  <title>Cellphone Cinema</title>
+
+</head>
+<body>
+
+  <a name="top"></a>
+
+    <!-- add a logo in the top left corner -->
+      <div class="logo" style="position: fixed; left: 20px; top: 20px; transform: rotate(-1deg);">
+        <a href="#top">
+          <img src="logo.png" alt="logo" style="width: 100px; height: 80px;">
+        </a>
+      </div>
+      
+
+    <!-- add an about me button in the top right corner opposite to the logo -->
+    <div class="about-me">
+        <a href="#about-section" class="hoverbutton" style="text-decoration: none; color: black; font-size: 25px; margin-right: 50px; margin-top: -10px; float: right;  border: 2px solid black ;padding: 10px 20px;">About Me</a>
+    </div>
+    <!-- put a heading above the slider -->
+    <div class="heading">
+        <h2 style="padding: 10%; padding-bottom: 0%;">Video Archive by Hassan Hamdani.</h2>
+        <h4> Shot on iPhone, really.</h4>
+    </div>
+
+
+
+    
+
+    
+<!-- Create slider template with 5 slides-->
+<section id="slider">
+  <input type="radio" name="slider" id="s1" checked onclick="changeText('s1')">
+  <input type="radio" name="slider" id="s2" onclick="changeText('s2')">
+  <input type="radio" name="slider" id="s3" onclick="changeText('s3')">
+  <input type="radio" name="slider" id="s4" onclick="changeText('s4')">
+  <input type="radio" name="slider" id="s5" onclick="changeText('s5')">
+
+  <!-- Put video within the slides -->
+  <label for="s1" id="slide1">
+    <video width = "100%" height = "100%" controls>
+    <source src="video1.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
+  </label>
+  <label for="s2" id="slide2">    
+    <video width = "100%" height = "100%" controls>
+    <source src="video2.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video></label>
+  <label for="s3" id="slide3">
+    <video width = "100%" height = "100%" controls>
+        <source src="vide3.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+  </label>
+  <label for="s4" id="slide4">
+    <video width = "100%" height = "100%" controls>
+        <source src="video4.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+  </label>
+  <label for="s5" id="slide5">
+    <video width = "100%" height = "100%" controls>
+        <source src="video5.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+        </video>
+  </label>
+</section>
+
+<!-- Put a video decription in a text box below the video that changes depending on which video is being viewed -->
+<div class="video-description">
+    <h3 id="header">"EK JANAM"</h3>
+    <p style="height: 280px; width:400px; align-content: center; background-color: aliceblue; margin-left: 36%; opacity: 50%;" id="legend"><br> This video is a bollywood music video adaptation <br> shot on the Hudson River. It is a sarcastic play on <br> common themes present in traditional bollywood <br> music videos.</p>
+</div>
+
+<!-- Put a About me at the bottom of the page -->
+<div id="about-section" class="about-me">
+  <h2 style="height: 30%; width:100%; align-content: right; background-color: aliceblue; margin-top: 22%;">About Me</h2>
+  <p style="height: 30%; width:100%; align-content: right; background-color: aliceblue; margin-top: 0%; opacity: 100%; flex:1;"> <img src="face.png" alt="My face" style="width: 250px; height: 300px;" id="hp"><br> My name is Hassan Hamdani, and I am a university student with a passion for filmmaking. I believe that with the advancements in technology, the capabilities of cellphones in shooting great films are increasing every day. That's why I decided to create this video archive, to showcase how we can create professional-looking films with just a phone. <br> <br> Gone are the days when making a film required expensive equipment. With the right techniques and editing tools, anyone can create a beautiful film with just their cellphone. My aim with this video archive is to inspire others to embrace this new way of filmmaking and to show that a phone can be a great substitute in the cinema field. <br> <br> I hope you enjoy watching the videos and that they inspire you to start creating your own films. Thank you for visiting my page! </p>
+</div>
+
+<div style="flex: 1;">
+  
+</div>
+
+
+</body>
+</html>

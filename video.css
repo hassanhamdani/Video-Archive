@@ -1,0 +1,171 @@
+
+body {
+margin: 0;
+background-image: linear-gradient(rgb(178, 182, 183),rgb(8, 7, 7) );
+font-family: monospace;
+}
+
+.heading {
+text-align: center;
+color: #fff;
+margin: 50px 0;
+font-size: 27px;
+
+}
+
+
+#slider {
+position: relative;
+width: 50%;
+height: 30vw;
+margin-left: 25%;
+margin-top: 2%;
+margin-bottom: 10%;
+perspective: 1400px;
+transform-style: preserve-3d;
+}
+
+input[type=radio] {
+position: relative;
+top: 108%;
+left: 37%;
+width: 18px;
+height: 18px;
+margin: 0 20px 0 0;
+opacity: 0.3;
+}
+
+
+input[type=radio]:checked {
+opacity: 1;
+filter: grayscale(1)
+}
+
+
+#slider label {
+position: absolute;
+width: 100%; 
+height: 100%;
+top: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: transform 400ms ease;
+}
+
+
+
+/* Shadow element underneath the boxes */
+
+/* Main */
+#s1:checked ~ #slide1,
+#s2:checked ~ #slide2,
+#s3:checked ~ #slide3,
+#s4:checked ~ #slide4,
+#s5:checked ~ #slide5 {
+box-shadow: 0 20px 26px rgba(0,0,0, 0.3), 0 20px 6px rgba(0,0,0, 0.2);
+transform: translate3d(0%, 0, 0px);
+}
+
+/* Slide 2 */
+#s1:checked ~ #slide2,
+#s2:checked ~ #slide3,
+#s3:checked ~ #slide4,
+#s4:checked ~ #slide5,
+#s5:checked ~ #slide1 {
+box-shadow: 0 16px 10px rgba(0,0,0, 0.3), 0 10px 2px rgba(0,0,0, 0.2);
+transform: translate3d(20%, 0, -100px);
+}
+
+
+/* Slide 4 */
+#s1:checked ~ #slide3,
+#s2:checked ~ #slide4,
+#s3:checked ~ #slide5,
+#s4:checked ~ #slide1,
+#s5:checked ~ #slide2 {
+box-shadow: 0 5px 4px rgba(0,0,0, 0.4);
+transform: translate3d(40%, 0, -250px);
+}
+
+/* Slide 3 */
+#s1:checked ~ #slide4,
+#s2:checked ~ #slide5,
+#s3:checked ~ #slide1,
+#s4:checked ~ #slide2,
+#s5:checked ~ #slide3 {
+box-shadow: 0 5px 4px rgba(0,0,0, 0.4);
+transform: translate3d(-40%, 0, -250px);
+}
+
+/* Slide 5 */
+#s1:checked ~ #slide5,
+#s2:checked ~ #slide1,
+#s3:checked ~ #slide2,
+#s4:checked ~ #slide3,
+#s5:checked ~ #slide4 {
+box-shadow: 0 16px 10px rgba(0,0,0, 0.3), 0 10px 2px rgba(0,0,0, 0.2);
+transform: translate3d(-20%, 0, -100px);
+}
+
+.hoverbutton:hover{
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+
+  font-size: 20px;
+
+  font-family: monospace;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+/* About Us button*/
+.about-me p{
+  color:rgb(64, 63, 63);
+  font-size: 20px;
+  text-align: left;
+  margin: 0;
+  padding: 1%;
+  font-weight: bold;
+  font-family: monospace;
+
+
+}
+
+.about-me h2{
+  color:rgb(64, 63, 63);
+  font-size: 40px;
+  margin: 0;
+  padding: 1%;
+  font-weight: bold;
+  font-family: monospace;
+  margin-top: 15%;
+  margin-right: 5%;
+
+}
+
+  .video-description p {
+    color: rgb(64, 63, 63);
+    text-align: center;
+    font-size: 25px;
+    border-top-left-radius: 10%;
+    border-bottom-right-radius: 10%;
+  }
+
+  .video-description h3 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 33px;
+    font-weight: normal;
+  }
+
+  #hp  {
+    float: right;    
+     margin: 0 10px 100px 5px;
+    }
+
+
+  
