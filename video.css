@@ -1,8 +1,12 @@
+@font-face {
+  font-family: Avenir;
+  src: url(Fonts.ttf);
+}
 
 body {
 margin: 0;
-background-image: linear-gradient(rgb(178, 182, 183),rgb(8, 7, 7) );
-font-family: monospace;
+background-image: linear-gradient(rgb(118, 118, 120),rgb(8, 7, 7) );
+font-family: Avenir;
 }
 
 .heading {
@@ -115,7 +119,7 @@ transform: translate3d(-20%, 0, -100px);
 
   font-size: 20px;
 
-  font-family: monospace;
+  font-family: Avenir;
   padding: 10px;
   margin: 10px;
   cursor: pointer;
@@ -130,7 +134,7 @@ transform: translate3d(-20%, 0, -100px);
   margin: 0;
   padding: 1%;
   font-weight: bold;
-  font-family: monospace;
+  font-family: Avenir;
 
 
 }
@@ -141,7 +145,7 @@ transform: translate3d(-20%, 0, -100px);
   margin: 0;
   padding: 1%;
   font-weight: bold;
-  font-family: monospace;
+  font-family: Avenir;
   margin-top: 15%;
   margin-right: 5%;
 
