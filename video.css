@@ -2,6 +2,19 @@
   font-family: Avenir;
   src: url(Fonts.ttf);
 }
+@font-face {
+  font-family: Underground;
+  src: url(UndergroundNF.ttf);
+}
+@font-face {
+  font-family: Carn;
+  src: url(Carnevalee\ Freakshow.ttf);
+}
+@font-face {
+  font-family: Showtime;
+  src: url(Showtime-R9Ke.ttf);
+}
+
 
 body {
 margin: 0;
@@ -15,6 +28,16 @@ color: #fff;
 margin: 50px 0;
 font-size: 27px;
 
+}
+
+.heading h1{
+  font-size: 70px;
+  font-family: Showtime;
+  color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
+  margin-top: -5%;
+  margin-bottom: 5%;
 }
 
 
@@ -31,7 +54,7 @@ transform-style: preserve-3d;
 
 input[type=radio] {
 position: relative;
-top: 108%;
+top: 106%;
 left: 37%;
 width: 18px;
 height: 18px;
@@ -170,6 +193,47 @@ transform: translate3d(-20%, 0, -100px);
     float: right;    
      margin: 0 10px 100px 5px;
     }
+
+
+    /* create a fadeout animation where the .fade disappears completely after 10 seconds */
+    .fade {
+      animation: fadeout 10s;
+      animation-fill-mode: forwards;
+      -moz-animation: fadeout 10s; /* Firefox */
+      -moz-animation-fill-mode: forwards;
+      -webkit-animation: fadeout 10s; /* Safari and Chrome */
+      -webkit-animation-fill-mode: forwards;
+      -o-animation: fadeout 10s; /* Opera */
+      -o-animation-fill-mode: forwards;
+    }
+
+    /* create the keyframe that will fade out the .fade element */
+    @keyframes fadeout {
+      from { opacity: 1; }
+      to   { opacity: 0; }
+    }
+
+    /* Firefox */
+    @-moz-keyframes fadeout {
+      from { opacity: 1; }
+      to   { opacity: 0; }
+    }
+
+    /* Safari and Chrome */
+    @-webkit-keyframes fadeout {
+      from { opacity: 1; }
+      to   { opacity: 0; }
+    }
+
+    /* Opera */
+    @-o-keyframes fadeout {
+      from { opacity: 1; }
+      to   { opacity: 0; }
+    }
+
+
+  
+
 
 
   

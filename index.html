@@ -21,15 +21,43 @@
 
     <!-- add an about me button in the top right corner opposite to the logo -->
     <div class="about-me">
-        <a href="#about-section" class="hoverbutton" style="text-decoration: none; color: black; font-size: 25px; margin-right: 50px; margin-top: -10px; float: right;  border: 2px solid black ;padding: 10px 20px;">About Me</a>
+        <a href="#about-section" class="hoverbutton" style="text-decoration: none; color: black; font-size: 25px; margin-right: 50px; margin-top: 50px; float: right;  border: 2px solid black ;padding: 10px 20px;">About Me</a>
     </div>
     <!-- put a heading above the slider -->
     <div class="heading">
-        <h1 style="padding: 10%; padding-bottom: 0%; font-weight: bolder;">Video Archive</h1>
-      <h5  style="padding: 10%; padding-bottom: 0%;" > by Hassan Hamdani</h5>
-        <h4> Shot on iPhone, really.</h4>
+        <h1 style="padding: 9%; padding-bottom: 0%; margin-bottom: -1%;">[Video_Collection]</h1>
+        <h5 style="padding-bottom: 0%;">by Hassan Hamdani</h5>
+        <h3 style="margin-bottom: -3%;"> Shot on iPhone, really.</h3>
     </div>
 
+    <!-- put text with an arrow on the left side of the slide, and make it fade out in 5 seconds-->
+
+      <!-- Add below.png image to the top right of the screen, with a 30 degree angle-->
+      <div class="fade" style="position: fixed; right: 40px; top: 160px; transform: rotate(10deg);">
+          <img src="below.png" style="width: 350px; height: 300px;">
+      </div>
+
+    <script type="text/javascript">
+      var opacity=0;
+      var intervalID=0;
+      window.onload=fadeout;
+          function fadeout(){
+              setInterval(hide, 200);
+          }
+      function hide(){
+          var body=document.getElementsByID("fade");
+          opacity =
+      Number(window.getComputedStyle(body).getPropertyValue("opacity"))
+        
+              if(opacity>0){
+                  opacity=opacity-0.1;
+                          body.style.opacity=opacity
+              }
+              else{
+                  clearInterval(intervalID);
+              }
+          }
+  </script>
 
 
     
@@ -85,10 +113,6 @@
 <div id="about-section" class="about-me">
   <h2 style="height: 30%; width:100%; align-content: right; background-color: aliceblue; margin-top: 22%;">About Me</h2>
   <p style="height: 30%; width:100%; align-content: right; background-color: aliceblue; margin-top: 0%; opacity: 100%; flex:1;"> <img src="face.png" alt="My face" style="width: 250px; height: 300px;" id="hp"><br> My name is Hassan Hamdani, and I am a university student with a passion for filmmaking. I believe that with the advancements in technology, the capabilities of cellphones in shooting great films are increasing every day. That's why I decided to create this video archive, to showcase how we can create professional-looking films with just a phone. <br> <br> Gone are the days when making a film required expensive equipment. With the right techniques and editing tools, anyone can create a beautiful film with just their cellphone. My aim with this video archive is to inspire others to embrace this new way of filmmaking and to show that a phone can be a great substitute in the cinema field. <br> <br> I hope you enjoy watching the videos and that they inspire you to start creating your own films. Thank you for visiting my page! </p>
-</div>
-
-<div style="flex: 1;">
-  
 </div>
 
 
