@@ -1,30 +1,17 @@
 @font-face {
-  font-family: Avenir;
-  src: url(Fonts.ttf);
+  font-family: Abel;
+  src: url(Abel-Regular.ttf);
 }
-@font-face {
-  font-family: Underground;
-  src: url(UndergroundNF.ttf);
-}
-@font-face {
-  font-family: Carn;
-  src: url(Carnevalee\ Freakshow.ttf);
-}
-@font-face {
-  font-family: Showtime;
-  src: url(Showtime-R9Ke.ttf);
-}
-
 
 body {
 margin: 0;
-background-image: linear-gradient(rgb(118, 118, 120),rgb(8, 7, 7) );
-font-family: Avenir;
+background-image: linear-gradient(#9EC9F6,rgba(32, 57, 61, 1) );
+font-family: Abel;
 }
 
 .heading {
 text-align: center;
-color: #fff;
+color: #F5F5DC;
 margin: 50px 0;
 font-size: 27px;
 
@@ -32,8 +19,8 @@ font-size: 27px;
 
 .heading h1{
   font-size: 70px;
-  font-family: Showtime;
-  color: rgb(255, 255, 255);
+  font-family: Abel;
+  color: #F5F5DC;
   margin: 0;
   padding: 0;
   margin-top: -5%;
@@ -59,7 +46,7 @@ left: 37%;
 width: 18px;
 height: 18px;
 margin: 0 20px 0 0;
-opacity: 0.3;
+/* opacity: 0.3; */
 }
 
 
@@ -80,60 +67,58 @@ justify-content: center;
 transition: transform 400ms ease;
 }
 
+#video1container, #video2container, #video3container, #video4container {
+  display: flex;
+  align-items: center; /* Centers the content vertically */
+  justify-content: center; /* Centers the content horizontally */
+  height: 100%; /* Takes full height of the parent */
+  color: #F5F5DC; /* Light color for visibility */
+  font-size: 20px; /* Makes text larger and easier to read */
+  text-align: center; /* Ensures text is centered if it wraps to multiple lines */
+  padding: 20px; /* Adds space around the text */
+  background-color: #9EC9F6;
+}
+
+p {
+  margin: 0; /* Removes default margin from paragraph elements */
+}
 
 
 /* Shadow element underneath the boxes */
 
-/* Main */
+/* Main Slide - Bring to the front and center */
 #s1:checked ~ #slide1,
 #s2:checked ~ #slide2,
 #s3:checked ~ #slide3,
-#s4:checked ~ #slide4,
-#s5:checked ~ #slide5 {
-box-shadow: 0 20px 26px rgba(0,0,0, 0.3), 0 20px 6px rgba(0,0,0, 0.2);
-transform: translate3d(0%, 0, 0px);
+#s4:checked ~ #slide4 {
+    transform: translate3d(0%, 0, 0px);
 }
 
-/* Slide 2 */
+/* Slide 2 - Position to the right and slightly back */
 #s1:checked ~ #slide2,
 #s2:checked ~ #slide3,
 #s3:checked ~ #slide4,
-#s4:checked ~ #slide5,
-#s5:checked ~ #slide1 {
-box-shadow: 0 16px 10px rgba(0,0,0, 0.3), 0 10px 2px rgba(0,0,0, 0.2);
-transform: translate3d(20%, 0, -100px);
+#s4:checked ~ #slide1 {
+    transform: translate3d(20%, 0, -100px);
 }
 
-
-/* Slide 4 */
+/* Slide 3 - Position further to the right and further back */
 #s1:checked ~ #slide3,
 #s2:checked ~ #slide4,
-#s3:checked ~ #slide5,
-#s4:checked ~ #slide1,
-#s5:checked ~ #slide2 {
-box-shadow: 0 5px 4px rgba(0,0,0, 0.4);
-transform: translate3d(40%, 0, -250px);
-}
-
-/* Slide 3 */
-#s1:checked ~ #slide4,
-#s2:checked ~ #slide5,
 #s3:checked ~ #slide1,
-#s4:checked ~ #slide2,
-#s5:checked ~ #slide3 {
-box-shadow: 0 5px 4px rgba(0,0,0, 0.4);
-transform: translate3d(-40%, 0, -250px);
+#s4:checked ~ #slide2 {
+    transform: translate3d(40%, 0, -250px);
 }
 
-/* Slide 5 */
-#s1:checked ~ #slide5,
+/* Slide 4 - Position to the left and further back (mirroring Slide 3's behavior) */
+#s1:checked ~ #slide4,
 #s2:checked ~ #slide1,
 #s3:checked ~ #slide2,
-#s4:checked ~ #slide3,
-#s5:checked ~ #slide4 {
-box-shadow: 0 16px 10px rgba(0,0,0, 0.3), 0 10px 2px rgba(0,0,0, 0.2);
-transform: translate3d(-20%, 0, -100px);
+#s4:checked ~ #slide3 {
+    transform: translate3d(-40%, 0, -250px);
 }
+
+
 
 .hoverbutton:hover{
   background-color: rgb(255, 255, 255);
@@ -148,46 +133,6 @@ transform: translate3d(-20%, 0, -100px);
   cursor: pointer;
   transition: 0.5s;
 }
-
-/* About Us button*/
-.about-me p{
-  color:rgb(64, 63, 63);
-  font-size: 20px;
-  text-align: left;
-  margin: 0;
-  padding: 1%;
-  font-weight: bold;
-  font-family: Avenir;
-
-
-}
-
-.about-me h2{
-  color:rgb(64, 63, 63);
-  font-size: 40px;
-  margin: 0;
-  padding: 1%;
-  font-weight: bold;
-  font-family: Avenir;
-  margin-top: 15%;
-  margin-right: 5%;
-
-}
-
-  .video-description p {
-    color: rgb(64, 63, 63);
-    text-align: center;
-    font-size: 25px;
-    border-top-left-radius: 10%;
-    border-bottom-right-radius: 10%;
-  }
-
-  .video-description h3 {
-    color: rgb(255, 255, 255);
-    text-align: center;
-    font-size: 33px;
-    font-weight: normal;
-  }
 
   #hp  {
     float: right;    
