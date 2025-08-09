@@ -1,16 +1,20 @@
-function changeText(val){
-  if(val=='s1'){
-    document.getElementById("header").innerHTML="\"EK JANAM\""
+function changeText(val) {
+  var headerText = "";
+  switch (val) {
+    case 's1':
+      headerText = "\"Intro\"";
+      break;
+    case 's2':
+      headerText = "\"Tea Time\"";
+      break;
+    case 's3':
+      headerText = "\"Highline Hentai\"";
+      break;
+    case 's4':
+      headerText = "\"Last Look\"";
+      break;
   }
-  else if (val=='s2'){
-    document.getElementById("header").innerHTML="\"POOL 2.0\""
-  }
-  else if (val=='s3'){
-    document.getElementById("header").innerHTML="\"TRIP TO MIAMI\""
-  }
-  else if (val=='s4'){
-    document.getElementById("header").innerHTML="\"SLOW DOWN\""
-  }
+  document.getElementById("header").innerHTML = headerText;
 }
 
 document.addEventListener('DOMContentLoaded', function() {

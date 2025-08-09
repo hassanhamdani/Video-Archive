@@ -49,13 +49,8 @@
   </script>
 
  
-<!-- Create slider template with 5 slides-->
+<!-- Create slider template with 4 slides-->
 <section id="slider">
-  <input type="radio" name="slider" id="s1" checked onclick="changeText('s1')">
-  <input type="radio" name="slider" id="s2" onclick="changeText('s2')">
-  <input type="radio" name="slider" id="s3" onclick="changeText('s3')">
-  <input type="radio" name="slider" id="s4" onclick="changeText('s4')">
-
   <!-- Put video within the slides -->
   <label for="s1" id="slide1">
     <div id="video1container">
@@ -79,9 +74,17 @@
 </label>
 </section>
 
+<!-- Radio button controls -->
+<div class="radio-buttons">
+  <input type="radio" name="slider" id="s1" checked onclick="changeText('s1')">
+  <input type="radio" name="slider" id="s2" onclick="changeText('s2')">
+  <input type="radio" name="slider" id="s3" onclick="changeText('s3')">
+  <input type="radio" name="slider" id="s4" onclick="changeText('s4')">
+</div>
+
 <!-- Put a video decription in a text box below the video that changes depending on which video is being viewed -->
 <div class="video-description">
-    <h3 id="header">"EK JANAM"</h3>
+    <h3 id="header">"Intro"</h3>
 </div>
 
 
